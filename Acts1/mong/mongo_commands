@@ -1,0 +1,2 @@
+db.getMongo().getDBNames()
+getCollectionNames()

@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Cloud Computing Assignment 2</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <h2>16CS352: Cloud Computing – Final Project</h2>
+
+  Evaluation for <code>{{ team_id }}</code><br>
+
+  SelfieLess IP address: <code>{{ report.selfie_ip }}</code><br>
+  Acts-only IP address: <code>{{ report.acts_ip }}</code><br>
+  Acts-only EC2 Username: <code>{{ report.acts_username }}</code><br>
+
+  <ol>
+    {% for line in report.stdout %}
+      <li>
+        <span id="positive_result">
+          {{ line }}
+        </span>
+      </li>
+    {% endfor %}
+
+    {% for line in report.stderr %}
+      <li>
+        <span id="negative_result">
+          {{ line }}
+        </span>
+      </li>
+    {% endfor %}
+  </ol>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

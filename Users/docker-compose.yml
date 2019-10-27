@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+    users:
+        build: .
+        ports:
+            - "8080:5000"
+        entrypoint: python ./flask-mongodb-example/users.py
+        depends_on:
+            - mongo
+
+    mongo:
+        image: mongo:4.0.5-xenial
+        ports:
+            - "27017:27017"

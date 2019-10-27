@@ -1,0 +1,3 @@
+docker exec -i -t container_name /bin/bash
+db.getMongo().getDBNames()
+getCollectionNames()

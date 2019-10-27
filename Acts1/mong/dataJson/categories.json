@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5c60b26dda63d062a81b4a8e"},"catId":1,"catName":"Army","size":14}
+{"_id":{"$oid":"5c60b272da63d062a81b4a8f"},"catId":2,"catName":"Pet","size":3}
+{"_id":{"$oid":"5c60b280da63d062a81b4a90"},"catId":3,"catName":"Old People","size":3}
+{"_id":{"$oid":"5c60b28dda63d062a81b4a91"},"catId":4,"catName":"Homeless","size":3}
+{"_id":{"$oid":"5c60b297da63d062a81b4a92"},"catId":5,"catName":"plants","size":10}
+{"_id":{"$oid":"5c60b2a0da63d062a81b4a93"},"catId":6,"catName":"disaster","size":2}

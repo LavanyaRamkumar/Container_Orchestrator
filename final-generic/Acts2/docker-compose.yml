@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+   acts:
+      build: ac
+      ports:
+         - "8000:5000"
+   mongo:
+      build: mong
+      ports:
+         - "27017:27017"
+   
+
+   
+
+   

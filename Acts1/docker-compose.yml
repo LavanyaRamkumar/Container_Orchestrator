@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    acts:
+        build: .
+        ports:
+            - "8000:5000"
+        depends_on:
+            - mongo
+    mongo:
+        image: mongo:4.0.5-xenial
+        ports:
+            - "27017:27017"

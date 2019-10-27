@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>UPLOAD</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<script src="{{ url_for('static', filename='js/cat.js') }}"></script>
+</head>
+<body>
+<select id="cat" required>
+	<option value="Army">Army</option>
+	<option value="Pet">Pet</option>
+	<option value="Old People">Old People</option>
+	<option value="Homeless">Homeless</option>
+	<option value="plants">plants</option>
+	<option value="disaster">disaster</option>
+</select>
+<input type="submit" id="upload" value="start"></button>
+<div id="images">
+<!-- <img id="img" height="300" src="{{ url_for('static', filename='images/upload.png') }}"><br> -->
+
+</div>
+
+
+
+<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+</body>
+</html>
